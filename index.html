@@ -62,35 +62,35 @@
             </div>
             <div class="flex">
               <h2>welcome john smith</h2>
-              <p>account no. #83663652</p>
-              <p>922 58th street, oakland, ca 94608</p>
-            </div>
-            <!-- </div> -->
-            <div class="flex-container">
-              <div class="flex">
-                <p>total amount due</p>
-                <p>$ 13.48</p>
-                <p>due 5/6/2017</p>
-              </div>
-              <div class="flex">
-                <button>pay now</button>
-                <button>save date</button>
-              </div>
+              <p class="red">account no. #83663652</p>
+              <p class="street">922 58th street, oakland, ca 94608</p>
             </div>
           </div>
+          <div class="flex-container">
+            <div class="flex">
+              <h2>total amount due</h2>
+              <p class="red">$ 138.48</p>
+              <p class="street">due 5/6/2017</p>
+            </div>
+            <div class="flex">
+              <button>pay now</button>
+              <button>save date</button>
+            </div>
+          </div>
+          <!-- </div> -->
         </div>
         <div class="print">
-          <p><a href="#"><i class="fa fa-print" aria-hidden="true"></i></a></p>
-          <p><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></p>
+          <p><a href="#"><i class="fa fa-print" aria-hidden="true"></i>Print</a> | </p>
+          <p> <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
         </div>
       </div>
       <div class="vertical-menu">
-        <a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i>dashboard</a>
-        <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>bill details</a>
-        <a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>bill analysis</a>
-        <a href="#"><i class="fa fa-bell" aria-hidden="true"></i>alert preferences</a>
-        <a href="#"><i class="fa fa-user" aria-hidden="true"></i>manage account</a>
-        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>live chat</a>
+        <p><a href="#"><i class="fa fa-home" aria-hidden="true"></i>dashboard</a></p>
+        <p><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>bill details</a></p>
+        <p><a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>bill analysis</a></p>
+        <p><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>alert preferences</a></p>
+        <p><a href="#"><i class="fa fa-user" aria-hidden="true"></i>manage account</a></p>
+        <p><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>live chat</a></p>
       </div>
     </header>
     <!--header section end-->
@@ -100,40 +100,64 @@
         <div class="alert_details">
           <h3>alert details</h3>
           <ul>
-            <li><label>alert type</label></li>
+            <li><label>Alert Type</label></li>
             <li><select>
-                <option value="high usage">High usage</option>
-              </select></li>
+                <option value="0">Choose</option>
+                <option value="high usage">High Usage</option>
+                <option value="medium usage">medium Usage</option>
+                <option value="low usage">low Usage</option>
+              </select>
+            </li>
+          </ul>
+          <ul>
             <li>
-              <label>enter name</label>
+              <label>Enter Name</label>
             </li>
             <li>
               <input type="text" value="Name of the alert">
             </li>
+          </ul>
+          <ul>
             <li>
-              <label>usage threshold</label>
+              <label>Usage Threshold</label>
             </li>
             <li>
-              <input type="number" value="600"> kwh
+              <input type="number" value="600">
             </li>
+            <li>
+              <label>kwh</label>
+            </li>
+          </ul>
+          <ul>
             <li>
               <input type="checkbox" value="alert">
-              <label>set as default usage threshold.you can later change in user preferences.</label>
+              <span>Set as default usage threshold.</span>
+              <p>You can later change in user preferences.</p>
             </li>
-            <li><button>+ alert</button></li>
+            <li>
+              <button>+ Add Alert</button>
+            </li>
           </ul>
         </div>
         <div class="user_detail">
-          <h3>contacts assigned to this alert</h3>
+          <h3>Contacts assigned to this alert</h3>
           <ul>
-            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Email</li>
-            <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
+            <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i>Hide</a></li>
+          </ul>
+          <ul>
             <li><input type="email" name="name" placeholder="John Email (johnsmith@gmail.com)"></li>
             <li><select>
-                <option>9:00</option>
+                <option value="0">Choose</option>
+                <option value="1">9:00</option>
+                <option value="2">11:00</option>
+                <option value="3">12:00</option>
               </select> to </li>
             <li><select>
-                <option>6:30</option>
+                <option value="0">Choose</option>
+                <option value="1">6:30</option>
+                <option value="2">7:30</option>
+                <option value="3">9:00</option>
               </select></li>
             <li><a href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
             <li>
@@ -144,17 +168,25 @@
               </select></li>
           </ul>
         </div>
-        <div class="phone_detail">
-          <h3>contacts assigned to this alert</h3>
+        <div class="user_detail">
+          <!-- <h3>Contacts assigned to this alert</h3> -->
           <ul>
-            <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></i></a>Phone</li>
+            <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></i>Phone</a></li>
             <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul>
             <li><input type="number" placeholder="9 3 6 9 8 5 4 7 8 5"></li>
             <li><select>
-                <option>9:00</option>
+                <option value="0">Choose</option>
+                <option value="1">9:00</option>
+                <option value="2">11:00</option>
+                <option value="3">12:00</option>
               </select> to </li>
             <li><select>
-                <option>End Time</option>
+                <option value="0">Choose</option>
+                <option value="1">6:30</option>
+                <option value="2">7:30</option>
+                <option value="3">9:00</option>
               </select></li>
             <li><a href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
             <li>
@@ -165,17 +197,25 @@
               </select></li>
           </ul>
         </div>
-        <div class="sms_detail">
-          <h3>contacts assigned to this alert</h3>
+        <div class="user_detail">
+          <!-- <h3>Contacts assigned to this alert</h3> -->
           <ul>
-            <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a>SMS</li>
+            <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>SMS</a></li>
             <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul>
             <li><input type="number" placeholder="9 3 6 9 8 5 4 7 8 5"></li>
             <li><select>
-                <option>9:00</option>
+                <option value="0">Choose</option>
+                <option value="1">9:00</option>
+                <option value="2">11:00</option>
+                <option value="3">12:00</option>
               </select> to </li>
             <li><select>
-                <option>End Time</option>
+                <option value="0">Choose</option>
+                <option value="1">6:30</option>
+                <option value="2">7:30</option>
+                <option value="3">9:00</option>
               </select></li>
             <li><a href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
             <li>
@@ -185,28 +225,34 @@
                 <option>+Assign another Phone</option>
               </select></li>
           </ul>
-          <button>save changes</button>
         </div>
+        <button class="saved">Save changes</button>
       </section>
 
       <section class="user">
         <div class="enquiry">
           <h3>where can i get some help?</h3>
           <ul>
-            <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
-            <li>online</li>
-            <li><a href="#">www.bsesdelhi.com</a></li>
-            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-            <li>call us</li>
-            <li><a href="#">BRPL 011-39999707</a></li>
-            <li><a href="#">BYPL 011-39999808</a></li>
-            <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="dots"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+            <li>Online</li>
+            <li><a href="#" class="power">www.bsesdelhi.com</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="dots"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+            <li>Call us</li>
+            <li><a href="#" class="power">BRPL 011-39999707</a></li>
+            <li><a href="#" class="power">BYPL 011-39999808</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="dots"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
             <li>Email</li>
             <li>For BSES Rajdhani Power Limited</li>
             <li><a href="#">brpl.customercare@relianceada.com</a></li>
             <li>For BSES Yamuna Power Limited</li>
             <li><a href="#">bypl.customercare@relianceada.com</a></li>
-            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul>
+            <li><a href="#" class="dots"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
             <li>Visit Customer Facilitation Center</li>
             <li>For BSES Rajdhani Power Limited A-block ,1st floor,BSES Bhawan Nehru Place, Delhi-110019
               Contact No.011-39999439
@@ -228,7 +274,9 @@
     <!--footer section start-->
     <footer>
       <div class="wrapper">
-        <a href="#"> &copy; BSES.All rights reserved.  </a>
+        <a href="#"> &copy; BSES.All rights reserved.
+          
+        </a>
       </div>
 
     </footer>
