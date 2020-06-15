@@ -114,7 +114,8 @@
               <label>Enter Name</label>
             </li>
             <li>
-              <input type="text" value="Name of the alert">
+              <input type="text" id="name">
+              <p id="demo"></p>
             </li>
           </ul>
           <ul>
@@ -122,7 +123,7 @@
               <label>Usage Threshold</label>
             </li>
             <li>
-              <input type="number" value="600">
+              <input type="text" value="600">
             </li>
             <li>
               <label>kwh</label>
@@ -130,7 +131,7 @@
           </ul>
           <ul>
             <li>
-              <input type="checkbox" value="alert">
+              <input type="checkbox">
               <span>Set as default usage threshold.</span>
               <p>You can later change in user preferences.</p>
             </li>
@@ -146,14 +147,16 @@
             <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i>Hide</a></li>
           </ul>
           <ul>
-            <li><input type="email" name="name" placeholder="John Email (johnsmith@gmail.com)"></li>
-            <li><select>
+            <li><input type="email" id="email"></li>
+            <li><select id="list">
                 <option value="0">Choose</option>
                 <option value="1">9:00</option>
                 <option value="2">11:00</option>
                 <option value="3">12:00</option>
-              </select> to </li>
-            <li><select>
+              </select></li>
+            <li>to</li>
+            <li>
+              <select>
                 <option value="0">Choose</option>
                 <option value="1">6:30</option>
                 <option value="2">7:30</option>
@@ -163,6 +166,9 @@
             <li>
               <button><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Remove</a></button>
             </li>
+            <p id="mail"></p>
+          </ul>
+          <ul>
             <li><select>
                 <option>+Assign another Email</option>
               </select></li>
@@ -175,13 +181,14 @@
             <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>
           </ul>
           <ul>
-            <li><input type="number" placeholder="9 3 6 9 8 5 4 7 8 5"></li>
+            <li><input type="text" id="mobile"></li>
             <li><select>
                 <option value="0">Choose</option>
                 <option value="1">9:00</option>
                 <option value="2">11:00</option>
                 <option value="3">12:00</option>
-              </select> to </li>
+              </select></li>
+            <li>to</li>
             <li><select>
                 <option value="0">Choose</option>
                 <option value="1">6:30</option>
@@ -192,6 +199,9 @@
             <li>
               <button><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Remove</a></button>
             </li>
+            <p id="mobile_no"></p>
+          </ul>
+          <ul>
             <li><select>
                 <option>+Assign another Phone</option>
               </select></li>
@@ -204,13 +214,14 @@
             <li><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i></a></li>
           </ul>
           <ul>
-            <li><input type="number" placeholder="9 3 6 9 8 5 4 7 8 5"></li>
+            <li><input type="text" id="sms"></li>
             <li><select>
                 <option value="0">Choose</option>
                 <option value="1">9:00</option>
                 <option value="2">11:00</option>
                 <option value="3">12:00</option>
-              </select> to </li>
+              </select></li>
+            <li>to</li>
             <li><select>
                 <option value="0">Choose</option>
                 <option value="1">6:30</option>
@@ -221,12 +232,16 @@
             <li>
               <button><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Remove</a></button>
             </li>
+            <p id="sms_no"></p>
+          </ul>
+          <ul>
             <li><select>
                 <option>+Assign another Phone</option>
               </select></li>
           </ul>
+          <input type="button" class="saved" onclick="submit()" value='Save changes'>
         </div>
-        <button class="saved">Save changes</button>
+
       </section>
 
       <section class="user">
@@ -265,28 +280,23 @@
         <figure>
           <img src="images/advertise.jpg">
         </figure>
-
       </section>
-
     </main>
     <!--main section end-->
 
-    <!--footer section start-->
+    <!-- footer section start -->
     <footer>
       <div class="wrapper">
         <a href="#"> &copy; BSES.All rights reserved.
-          
         </a>
       </div>
-
     </footer>
-    <!--footer section end-->
-
+    <!-- <footer section end -->
   </div>
   <!--container end-->
 
-  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-  <script src="js/script.js"></script> -->
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script> -->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
