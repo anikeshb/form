@@ -110,7 +110,7 @@ body{
   background-color: lightgrey;
 }
 .dashboard{
-  position: fixed;
+  position: relative;
   display:flex;
   width: 100%;
   top: 0;
@@ -184,14 +184,12 @@ button:nth-of-type(2){
   width:15%;
 }
 .vertical-menu{
-  height: 100%;
-  width: 13%;
-  position: fixed;
-  z-index: 1;
+  height:95%;
+  width:150px;
+  position: absolute;
   left: 0;
-  top:11%;
+  top:10%;
   background-color: #111;
-  /* overflow-x: hidden; */
   padding-top: 20px;
 }
 .vertical-menu a:active{
@@ -217,8 +215,8 @@ button:nth-of-type(2){
 .alert_inner{
   padding: 10px;
   width: 50%;
-  height:83%;
-  position:fixed;
+  height:90%;
+  position: absolute;
   left: 14%;
   background-color: white;
   top:12%;
@@ -269,7 +267,7 @@ font-size: 10px;
   font-size: 10px;
 }
 .alert_details button{
-  margin-left:45px;
+  margin-left:110px;
   font-size: 10px;
   background-color: grey;
   color: white;
@@ -299,7 +297,7 @@ input{
   padding: 0 0 10px 0;
 }
 .user_detail ul:nth-of-type(1){
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   border-top: 1px solid;
   position: relative;
 }
@@ -314,6 +312,9 @@ input{
   right:0;
   background-color: white;
 }
+.user_detail ul:nth-of-type(2) li{
+  margin-right:4px;
+}
 .user_detail a{
   margin:0 5px 0 5px;
   color: black;
@@ -327,7 +328,8 @@ input{
   font-size: 10px;
 }
 .user_detail select{
-  padding:5px 20px 5px 5px;
+  padding:5px 60px 5px 5px;
+  margin: 15px 0;
   font-size: 10px;
 }
 .user_detail ul:nth-of-type(2) li:nth-of-type(6) select{
@@ -352,8 +354,9 @@ input{
     bottom: 10px;
 }
 .user{
+  height:55%;
   width:33%;
-  position:fixed;
+  position: absolute;
   top: 12%;
   right: 0;
   background-color:white;
@@ -425,8 +428,9 @@ input{
 }
 .customer_care{
   width: 33%;
-  position:fixed;
-  bottom:2%;
+  height:30%;
+  position: absolute;
+  bottom:10px;
   right: 0;
 }
 
@@ -438,12 +442,11 @@ input{
 /*=================================
   footer styling starts here
 =================================*/ 
-footer{
+footer .wrapper {
   /* margin: 20px 0 5px 80px; */
-  width: 100%;
-  position: fixed;
-  bottom:25px;
-  left:8%;
+  position: absolute;
+  bottom:-55px;
+  left:13%;
 }
 footer a{
   font-size: 10px;
