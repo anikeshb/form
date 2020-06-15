@@ -4,13 +4,7 @@ function submit() {
     var email = document.getElementById("email").value;
     var phone = document.getElementById("mobile").value;
     var sms = document.getElementById("sms").value;
-<<<<<<< HEAD
     var list = document.getElementById('list').value;
-=======
-    var list = document.getElementById('list');
-    var strUser = list.options[list.selectedIndex].value;    
-    var strUser1 = list.options[list.selectedIndex].text;
->>>>>>> feature-js
     var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (!name) {
