@@ -106,12 +106,105 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+body{
+  background-color: lightgrey;
+}
+.dashboard{
+  position: relative;
+  display:flex;
+  width: 100%;
+  top: 0;
+}
+.logo{
+  padding:20px 30px 0 30px;
+  width:8%;
+}
+.alert_title{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  width:77%;
+  background-color: white;
+}
 
-
-
-
-
-
+.flex-container{
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+}
+.print{
+  padding: 20px 0;
+  display:flex;
+  width: 15%;
+  background-color: white;
+}
+h2{
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+p{
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.red{
+  color:red;
+  font-size: 12px;
+}
+.street{
+  font-size: 12px;
+}
+.alert_title button{
+  margin: 10px 0;
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+button:nth-of-type(2){
+  background-color:grey;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+}
+.print a{
+  color:black;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.print p:nth-of-type(2){
+  margin-left: 5px;
+}
+.flex-container:nth-of-type(1) .flex:nth-of-type(1){
+  width:15%;
+}
+.vertical-menu{
+  height:95%;
+  width:150px;
+  position: absolute;
+  left: 0;
+  top:10%;
+  background-color: #111;
+  padding-top: 20px;
+}
+.vertical-menu a:active{
+  color:white;
+}
+.vertical-menu a{
+  padding-left: 15px;
+  color:grey;
+  font-size: 10px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+.vertical-menu i{
+  margin-right: 5px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,12 +212,227 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.alert_inner{
+  padding: 10px;
+  width: 50%;
+  height:90%;
+  position: absolute;
+  left: 14%;
+  background-color: white;
+  top:12%;
+}
+.alert_details h3{
+  border-bottom: 1px solid grey;
+}
+ h3{
+  font-size:10px;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+  clear: both;
+}
+label{
+  font-size: 10px;
+  font-weight: 600;
+}
+.alert_details ul:nth-of-type(1) li:nth-of-type(2){
+  display: block;
+}
+.alert_details ul:nth-of-type(1) li:nth-of-type(2) select{
+width:180px;
+padding: 5px 5px;
+font-size: 10px;
+}
 
-
-
-
-
-
+.alert_details ul:nth-of-type(2) li:nth-of-type(1){
+  display: block;
+}
+.alert_details ul:nth-of-type(1){
+  float: left;
+  margin: 10px 15px 0 0px;
+}
+.alert_details ul:nth-of-type(3) li:nth-of-type(1){
+  display: block;
+}
+.alert_details ul:nth-of-type(3){
+  float: left;
+  margin: 0 10px 0 0px;
+}
+.alert_details ul:nth-of-type(3) li:nth-of-type(2) input{
+  width:100px;
+  padding: 3px;
+}
+.alert_details p{
+  margin-left: 25px;
+  font-size: 10px;
+}
+.alert_details button{
+  margin-left:110px;
+  font-size: 10px;
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px
+}
+span{
+  font-size: 10px;
+  font-weight: 600;
+}
+input{
+  padding: 5px;
+  font-size: 10px;
+}
+.alert_details ul:nth-of-type(4) li:nth-of-type(1){
+  padding: 10px 0 0 40px;
+}
+.alert_details{
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid grey;
+}
+.alert_details ul:nth-of-type(2){
+  margin:10px 0 ;
+}
+.user_detail h3{
+  padding: 0 0 10px 0;
+}
+.user_detail ul:nth-of-type(1){
+  /* padding-bottom: 20px; */
+  border-top: 1px solid;
+  position: relative;
+}
+.user_detail ul:nth-of-type(1) li:nth-of-type(1){
+  position:absolute;
+  top: -11px;
+  background-color: white;
+}
+.user_detail ul:nth-of-type(1) li:nth-of-type(2){
+  position:absolute;
+  top:-11px;
+  right:0;
+  background-color: white;
+}
+.user_detail ul:nth-of-type(2) li{
+  margin-right:4px;
+}
+.user_detail a{
+  margin:0 5px 0 5px;
+  color: black;
+  font-size: 12px;
+}
+.user_detail i{
+  margin-right: 2px;
+}
+.user_detail ul:nth-of-type(2) li:nth-of-type(1) input{
+  padding: 5px 50px 5px 10px;
+  font-size: 10px;
+}
+.user_detail select{
+  padding:5px 60px 5px 5px;
+  margin: 15px 0;
+  font-size: 10px;
+}
+.user_detail ul:nth-of-type(2) li:nth-of-type(6) select{
+  padding: 5px 54px 5px 5px;
+  margin: 15px 0;
+}
+.user_detail button{
+  border-radius: 10px;
+  border: none;
+  text-shadow: 0 0 black;
+  padding: 3px 5px;
+}
+.saved{
+    font-size: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.user{
+  height:55%;
+  width:33%;
+  position: absolute;
+  top: 12%;
+  right: 0;
+  background-color:white;
+}
+.enquiry{
+  padding: 10px 15px;
+}
+.enquiry h3{
+  border-bottom: 1px solid;
+  font-size:10px;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.enquiry ul:nth-of-type(1) li:nth-of-type(3){
+  display: block;
+  margin-top: -10px;
+}
+.enquiry ul:nth-of-type(2) li:nth-of-type(3){
+  display: block;
+  margin-top:-8px;
+  margin-bottom:-5px;
+}
+.enquiry ul:nth-of-type(3) li:nth-of-type(3){
+  display: block;
+  margin-left: 32px;
+  margin-top:-8px;
+}
+.enquiry ul:nth-of-type(3) li:nth-of-type(4){
+  display: block;
+  color: blue;
+  margin-left: 32px;
+}
+.enquiry ul:nth-of-type(3) li:nth-of-type(5){
+  display: block;
+  margin-left: 32px;
+}
+.enquiry ul:nth-of-type(3) li:nth-of-type(6){
+  display: block;
+  color: blue;
+  margin-left: 32px;
+}
+.enquiry ul:nth-of-type(4) li:nth-of-type(3){
+  display: block;
+  /* color: blue; */
+  margin-left: 32px;
+}
+.enquiry li {
+  font-size: 12px;
+}
+.dots{
+  border-radius: 50%;
+  background-color: grey;
+  padding: 6px 8px;
+  position: relative;
+  top: 4px;
+  color: white;
+}
+.power{
+  margin-top: -10px;
+  margin-left: 32px;
+  color: black;
+  font-size: 10px;
+  font-weight: 600;
+}
+.user ul{
+  border-bottom: 1px solid grey;
+  padding: 5px 0 10px 0;
+}
+.customer_care{
+  width: 33%;
+  height:30%;
+  position: absolute;
+  bottom:10px;
+  right: 0;
+}
 
 
 /*=================================
@@ -134,9 +442,18 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
+footer .wrapper {
+  /* margin: 20px 0 5px 80px; */
+  position: absolute;
+  bottom:-55px;
+  left:13%;
+}
+footer a{
+  font-size: 10px;
+  color: dimgrey;
+  font-weight: 600
+}
+ 
 
 
 
