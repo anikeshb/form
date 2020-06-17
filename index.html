@@ -96,6 +96,7 @@
     <!--header section end-->
     <!--main section start-->
     <main>
+      <form>
       <section class="alert_inner">
         <div class="alert_details">
           <h3>alert details</h3>
@@ -148,26 +149,28 @@
           </ul>
           <ul>
             <li><input type="email" id="email"></li>
-            <p id="list_item"></p>
+            
             <li><select id="list">
                 <option value="0">Choose</option>
                 <option value="1">9:00</option>
                 <option value="2">11:00</option>
                 <option value="3">12:00</option>
               </select></li>
+              <span id="list_item"></span>
             <li>to</li>
             <li>
-              <select>
+              <select id="lists">
                 <option value="0">Choose</option>
                 <option value="1">6:30</option>
                 <option value="2">7:30</option>
                 <option value="3">9:00</option>
               </select></li>
+              <span id="items"></span>            
             <li><a href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
             <li>
               <button><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Remove</a></button>
             </li>
-            <p id="mail"></p>
+            <span id="mail"></span>
           </ul>
           <ul>
             <li><select>
@@ -183,24 +186,26 @@
           </ul>
           <ul>
             <li><input type="text" id="mobile"></li>
-            <li><select>
+            <li><select id="listed">
                 <option value="0">Choose</option>
                 <option value="1">9:00</option>
                 <option value="2">11:00</option>
                 <option value="3">12:00</option>
               </select></li>
+              <span id="list_item2"></span>
             <li>to</li>
-            <li><select>
+            <li><select id="list3">
                 <option value="0">Choose</option>
                 <option value="1">6:30</option>
                 <option value="2">7:30</option>
                 <option value="3">9:00</option>
               </select></li>
+              <span id="list_item3"></span>
             <li><a href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
             <li>
               <button><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Remove</a></button>
             </li>
-            <p id="mobile_no"></p>
+            <span id="mobile_no"></span>
           </ul>
           <ul>
             <li><select>
@@ -216,33 +221,35 @@
           </ul>
           <ul>
             <li><input type="text" id="sms"></li>
-            <li><select>
+            <li><select id="list4">
                 <option value="0">Choose</option>
                 <option value="1">9:00</option>
                 <option value="2">11:00</option>
                 <option value="3">12:00</option>
               </select></li>
+              <span id="list_item4"></span>
             <li>to</li>
-            <li><select>
+            <li><select id="list5">
                 <option value="0">Choose</option>
                 <option value="1">6:30</option>
                 <option value="2">7:30</option>
                 <option value="3">9:00</option>
               </select></li>
+              <span id="list_item5"></span>
             <li><a href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
             <li>
               <button><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Remove</a></button>
             </li>
-            <p id="sms_no"></p>
+            <span id="sms_no"></span>
           </ul>
           <ul>
             <li><select>
                 <option>+Assign another Phone</option>
               </select></li>
           </ul>
-          <input type="button" class="saved" onclick="submit()" value='Save changes'>
+          <input type="button" class="saved" value='Save changes'>
         </div>
-
+      </form>
       </section>
 
       <section class="user">
@@ -296,7 +303,7 @@
   </div>
   <!--container end-->
 
-  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script> -->
+  <script src="assets/vendor/jquery-3.5.1.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
